@@ -39,3 +39,16 @@ for (let match of reader.data) {
 }
 
 console.log(`Man United won ${manUnitedWins} games`)
+
+//Generics notes
+
+const addOne = (a: number): number => {
+    return a + 1;
+};
+                                                //<== how generics work inside functions
+const add = (a: number, b: number): number => {
+    return a + b;
+}
+
+
+

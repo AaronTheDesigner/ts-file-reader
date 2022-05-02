@@ -34,3 +34,11 @@ for (var _i = 0, _a = reader.data; _i < _a.length; _i++) {
     }
 }
 console.log("Man United won " + manUnitedWins + " games");
+//Generics notes
+var addOne = function (a) {
+    return a + 1;
+};
+//<== how generics work inside functions
+var add = function (a, b) {
+    return a + b;
+};
