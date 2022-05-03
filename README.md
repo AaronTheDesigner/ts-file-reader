@@ -23,3 +23,8 @@ holdString.data = "string"
 const holdArrayOfStrings = new HoldAnything<string[]>();
 holdArrayOfStrings.data = ["djfka","jfkdlsaf","djksau"]
 ```
+
+### Inheritance vs Composition
+Inheritance - Inheritance in the case of this app refers to the abstract class CsvFileReader within the inheritance folder. The parent class has some core functionality that can be extended to child classes like MatchReader. MatchReader would have customized behavior. Inheritance is characterised by an 'is a' relationship between two classes. ex. MatchReader IS A CsvFileReader
+
+Composition - in this case refers to the interface DataReader. MatchReader meets the requirements of said interface, then anytime we call the load method, the action is delegated to an outside CsvFileReader. Composition is characterized by a 'has a' relationship between two classes. ex. MatchReader has a reference to an outside object.
